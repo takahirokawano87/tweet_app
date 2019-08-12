@@ -1,6 +1,11 @@
 <h1>投稿</h1>
+<hr>
 <p><%= @post.name %></p>
 <p><%= @post.content %></p>
+<p><%= @post.place %></p>
+<hr>
 <p><a href="/posts/<%= @post.id %>/edit">投稿を編集する</a></p>
+<!--属性data-method="delete"は削除リクエストを送る記述-->
 <p><a href="/posts/<%= @post.id %>" data-method="delete">投稿を削除する</a></p>
+
 <p><a href="/posts">投稿一覧へ戻る</a></p>
